@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/taskFragment">
+
+    <fragment
+        android:id="@+id/taskFragment"
+        android:name="com.anggitprayogo.todolist.feature.task.TaskFragment"
+        android:label="@string/task"
+        tools:layout="@layout/fragment_task" />
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.anggitprayogo.todolist.feature.calendar.CalendarFragment"
+        android:label="@string/calendar"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.anggitprayogo.todolist.feature.setting.SettingFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_setting" />
+</navigation>
